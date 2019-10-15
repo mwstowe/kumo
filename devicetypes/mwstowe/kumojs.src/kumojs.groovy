@@ -130,9 +130,12 @@ metadata {
             state "default", icon: "http://www.michaelstowe.com/kumo/vent-swing@2x.png", action: "vent-swing"
             state "4", icon: "http://www.michaelstowe.com/kumo/vent-swing@2x.png", backgroundColor: "#efefef"        
         }
-       standardTile("vent-0", "state.Vent", height: 1, width: 1, decoration: "flat") {
+        standardTile("vent-0", "state.Vent", height: 1, width: 1, decoration: "flat") {
             state "default", icon: "http://www.michaelstowe.com/kumo/vent-auto@2x.png", action: "vent-auto"
             state "0", icon: "http://www.michaelstowe.com/kumo/vent-auto@2x.png", backgroundColor: "#efefef"        
+        }
+        standardTile("refresh", "device.refresh", decoration: "flat", width: 1, height: 1) {
+            state "default", action:"refresh.refresh", icon:"st.secondary.refresh"
         }
 }
 
